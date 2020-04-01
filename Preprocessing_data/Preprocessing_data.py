@@ -15,13 +15,6 @@ y = dataset.iloc[:, 3].values
 #labelencoder_x = LabelEncoder()
 #x[:,0] = labelencoder_x.fit_transform(x[:,0])
 
-#Codificar datos categoricos en variables dummy
-onehotencoder = make_column_transformer((OneHotEncoder(),[0]), remainder = "passthrough")
-x = onehotencoder.fit_transform(x)
-
-labelencoder_y = LabelEncoder()
-y = labelencoder_y.fit_transform(y)
-
 #Dividir el dataset entrenamiento/testing
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
 
