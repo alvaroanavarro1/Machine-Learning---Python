@@ -11,10 +11,6 @@ dataset = pd.read_csv('Data.csv')
 x = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, 3].values
 
-#Codificar datos categoricos 
-#labelencoder_x = LabelEncoder()
-#x[:,0] = labelencoder_x.fit_transform(x[:,0])
-
 #Dividir el dataset entrenamiento/testing
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
 
