@@ -99,10 +99,21 @@ y_pred2 = regression.predict(x_Modeled)
 #Ajuste de variables a plotear
 x_Modeled = x_Modeled[:,1]
 x = x[:,3]
+#Modelo Final luego de eliminación hacia atras
 plt.plot(x,y,'o', color = "red", label = "Real data")
 plt.plot(x_Modeled, y_pred2, color = "blue", label = "Regression Line")
-plt.title("Starups Profit vs R&D spend  ($)")
+plt.title("Starups Profit vs R&D spend  ($) (Optimum)")
 plt.ylabel("Profit ($)")
 plt.xlabel("R&D spend")
+plt.legend()
+plt.show()
+
+#
+plt.plot(y_pred,'o', color = "red", label = "Real data")
+plt.plot(y_test,'o', color = "blue", label = "Predicted data")
+plt.title("Starups Profit vs Expenses ($)")
+plt.ylabel("Profit ($)")
+plt.xlabel("Expenses")
+plt.xticks([])
 plt.legend()
 plt.show()
