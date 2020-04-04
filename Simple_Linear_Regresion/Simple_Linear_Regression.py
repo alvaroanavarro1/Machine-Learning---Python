@@ -1,12 +1,12 @@
 #Regresión linear simple
 
-#Pre procesado de datos
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
+#Pre procesado de datos
 #Importar el dataset
 dataset = pd.read_csv('Salary_Data.csv')
 
