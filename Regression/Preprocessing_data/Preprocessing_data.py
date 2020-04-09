@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
 #Importar el dataset
 dataset = pd.read_csv('Data.csv')
