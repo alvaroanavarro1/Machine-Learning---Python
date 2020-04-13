@@ -16,6 +16,10 @@ For this repository we study the following  algorithms:
 - K-Nearest neighbors (K-NN)
 - Support vector machine (SVM)
 - Naive Bayes
+- Decision tree classification
+- Random forest classification
+
+### Clustering
 
 
 
