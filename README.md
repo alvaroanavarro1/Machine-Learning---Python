@@ -1,5 +1,5 @@
 # Machine-Learning-Python
-Machine learning A-Z Udemy course for a first approach with the different algorithms. 
+Machine learning A-Z Udemy course for a first approach to the different algorithms. 
 For this repository we study the following  algorithms:
 
 ### Regression
@@ -13,6 +13,9 @@ For this repository we study the following  algorithms:
 
 ### Classification
 - Logistic regression
+- K-Nearest neighbors (K-NN)
+- Support vector machine (SVM)
+- Naive Bayes
 
 
 
