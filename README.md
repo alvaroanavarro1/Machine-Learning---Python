@@ -20,6 +20,10 @@ For this repository we study the following  algorithms:
 - Random forest classification
 
 ### Clustering
+- K-Means
+- Hierarchical
+
+### Association Rule Learning
 
 
 
