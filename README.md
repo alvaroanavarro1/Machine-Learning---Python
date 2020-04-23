@@ -24,6 +24,10 @@ For this repository we study the following  algorithms:
 - Hierarchical
 
 ### Association Rule Learning
+- Apriori
+
+### Reinforcement Learning
+- Upper Confidence Bound (UCB)
 
 
 
