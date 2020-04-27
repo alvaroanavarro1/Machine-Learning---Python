@@ -28,6 +28,10 @@ For this repository we study the following  algorithms:
 
 ### Reinforcement Learning
 - Upper Confidence Bound (UCB)
+- Thompson Sampling
+
+### Natural Language Processing
+
 
 
 
