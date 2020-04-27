@@ -31,7 +31,9 @@ For this repository we study the following  algorithms:
 - Thompson Sampling
 
 ### Natural Language Processing
+- Natural Language Processing (Bag of words)
 
+### Deep Learning
 
 
 
