@@ -34,6 +34,7 @@ For this repository we study the following  algorithms:
 - Natural Language Processing (Bag of words)
 
 ### Deep Learning
+- Artificial Neural Networks (ANN)
 
 
 
