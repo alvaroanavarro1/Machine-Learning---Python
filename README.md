@@ -35,6 +35,10 @@ For this repository we study the following  algorithms:
 
 ### Deep Learning
 - Artificial Neural Networks (ANN)
+- Convolutional Neural Networks (CNN)
+
+### Dimensionality Reduction
+- Principal Component Analysis (PCA)
 
 
 
