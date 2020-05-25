@@ -1,4 +1,4 @@
-# Principal Component Analysis (PCA)
+# Linear Discriminant Analysis (LDA)
 
 # Importar librerias
 import numpy as np
@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.decomposition import PCA
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from matplotlib.colors import ListedColormap
@@ -23,13 +23,12 @@ X = sc.fit_transform(X)
 # Creacion del conjunto de testing y de entrenamiento
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
 
-# Aplicar PCA
-pca = PCA(n_components = 2)
-X_train = pca.fit_transform(X_train)
-X_test = pca.transform(X_test)
-explained_variance = pca.explained_variance_ratio_
+# Aplicar LDA
+lda = LDA(n_components = 2)
+X_train = lda.fit_transform(X_train, y_train)
+X_test = lda.transform(X_test)
 
-# Ajustar el modelo de regresión logística en el conjunto de entrenamiento
+#  Ajustar el modelo de regresión logística en el conjunto de entrenamiento
 classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)
 
@@ -52,8 +51,8 @@ for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green', 'blue'))(i), label = j)
 plt.title('Logistic Regression (Training set)')
-plt.xlabel('PC1')
-plt.ylabel('PC2')
+plt.xlabel('LD1')
+plt.ylabel('LD2')
 plt.legend()
 plt.show()
 
@@ -69,7 +68,7 @@ for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                 c = ListedColormap(('red', 'green', 'blue'))(i), label = j)
 plt.title('Logistic Regression (Test set)')
-plt.xlabel('PC1')
-plt.ylabel('PC2')
+plt.xlabel('LD1')
+plt.ylabel('LD2')
 plt.legend()
 plt.show()
