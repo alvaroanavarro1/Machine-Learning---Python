@@ -39,6 +39,7 @@ For this repository we study the following  algorithms:
 
 ### Dimensionality Reduction
 - Principal Component Analysis (PCA)
+- Linear Discriminant Analysis (LDA)
 
 
 
