@@ -40,6 +40,11 @@ For this repository we study the following  algorithms:
 ### Dimensionality Reduction
 - Principal Component Analysis (PCA)
 - Linear Discriminant Analysis (LDA)
+- Kernel PCA
+
+### Model Selection Boosting
+- K-Fold Cross Validation
+- Grid Search
 
 
 
